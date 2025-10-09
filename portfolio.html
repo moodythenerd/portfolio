@@ -1,38 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Moody Tawfiq — Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="portfolio.css" />
+
+    <!-- Font Awesome (for icons) -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
           crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
 <header id="top">
-    <h1>Moody Tawfiq</h1>
-    <p>314 Fergus Crescent</p>
-    <p>
-        <a href="tel:+16134105458"><i class="fa-solid fa-phone"></i> (613) 410-5458</a> •
-        <a href="mailto:mahmoud.mm.tawfiq@gmail.com"><i class="fa-solid fa-envelope"></i> mahmoud.mm.tawfiq@gmail.com</a>
-    </p>
-    <div class="socials">
-        <a href="https://github.com/moodythenerd" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github"></i><span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/mahmoud-ahmed-88a6492ab/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
-        </a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahmoud.mm.tawfiq@gmail.com"
-           target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-envelope"></i><span>Email</span>
-        </a>
+    <div class="header-container">
+        <!-- Profile image (aligned far left) -->
+        <img src="images/profile.jpg" alt="Profile photo of Moody Tawfiq" class="profile-pic" />
+
+        <div class="header-text">
+            <h1>Moody Tawfiq</h1>
+            <p>314 Fergus Crescent</p>
+            <p>
+                <a href="tel:+16134105458"><i class="fa-solid fa-phone"></i> (613) 410-5458</a>
+                •
+                <a href="mailto:mahmoud.mm.tawfiq@gmail.com"><i class="fa-solid fa-envelope"></i> mahmoud.mm.tawfiq@gmail.com</a>
+            </p>
+
+            <div class="socials">
+                <a href="https://github.com/moodythenerd" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i><span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mahmoud-ahmed-88a6492ab/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahmoud.mm.tawfiq@gmail.com"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope"></i><span>Email</span>
+                </a>
+            </div>
+        </div>
     </div>
 </header>
 
+<!-- ===== NAVIGATION ===== -->
 <nav class="site-nav">
     <ul>
         <li><a href="#about">About</a></li>
@@ -43,6 +57,7 @@
     </ul>
 </nav>
 
+<!-- ===== ABOUT ===== -->
 <section id="about" class="card">
     <h2>About Me</h2>
     <p>
@@ -53,6 +68,7 @@
     </p>
 </section>
 
+<!-- ===== EDUCATION + SKILLS ===== -->
 <div class="content-grid">
     <aside id="education" class="card">
         <h2>Education</h2>
@@ -62,6 +78,7 @@
             <li><strong>Global Academy International</strong> — Doha, Qatar (2009–2023)</li>
         </ul>
     </aside>
+
     <article id="skills" class="card">
         <h2>Skills</h2>
         <ul class="skill-list">
@@ -72,8 +89,11 @@
     </article>
 </div>
 
+<!-- ===== PROJECTS ===== -->
 <section id="projects" class="card">
     <h2>Projects</h2>
+
+    <!-- Existing project -->
     <div class="project">
         <h3><i class="fa-solid fa-laptop-code"></i> Portfolio Builder — Client Showcases</h3>
         <span class="tag">HTML/CSS</span> <span class="tag">GitHub</span> <span class="tag">Design</span>
@@ -89,8 +109,26 @@
             </a>
         </div>
     </div>
+
+    <!-- NEW placeholder project -->
+    <div class="project">
+        <h3><i class="fa-solid fa-briefcase"></i> Project Placeholder — Coming Soon</h3>
+        <span class="tag">Category</span> <span class="tag">Skill</span>
+        <p class="project-meta">Company or Organization • Date Range</p>
+        <ul>
+            <li>Short description of the project’s purpose and goals.</li>
+            <li>Key contributions or technologies used.</li>
+            <li>Results, outcomes, or what you learned.</li>
+        </ul>
+        <div class="project-links">
+            <a class="btn outline" href="#" onclick="return false;">
+                <i class="fa-solid fa-up-right-from-square"></i> Case Study (coming soon)
+            </a>
+        </div>
+    </div>
 </section>
 
+<!-- ===== CONTACT ===== -->
 <section id="contact" class="card">
     <h2>Contact</h2>
     <p>Open to internships, collaborations, and new projects.</p>
@@ -104,13 +142,17 @@
     </div>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
     <p>© <span id="year"></span> Moody Tawfiq • Built with HTML & CSS</p>
     <p><a href="#top">Back to top ↑</a></p>
 </footer>
 
+<!-- ===== SCRIPT ===== -->
 <script>
+    // Dynamically updates year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
