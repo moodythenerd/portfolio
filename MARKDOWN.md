@@ -1,5 +1,14 @@
 # Moody Tawfiq Portfolio Documentation
 
+# 💾 Portfolio Enhancement 1 — Update Summary
+
+- Added new project placeholder
+- Added profile image to images/ folder and positioned top-left in header
+- Added detailed comments throughout HTML & CSS
+- Improved responsive behavior — image and nav stack properly on smaller screens
+
+---
+
 ## Technologies Used
 - HTML5
 - CSS3
