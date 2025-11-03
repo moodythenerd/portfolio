@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatzy Game — Assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+<header>
+    <h1>🎲 Yatzy Game</h1>
+    <p>Assignment 1 — Interactive Version</p>
+</header>
+
+<main class="game-layout">
+    <section class="dice-section">
+        <div id="roll-info">Rolls left: 3</div>
+        <div class="dice-container" id="dice-container"></div>
+        <div class="buttons">
+            <button id="btn-roll">Roll</button>
+            <button id="btn-end">End Turn</button>
+            <button id="btn-new">New Game</button>
+        </div>
+    </section>
+
+    <section class="scoreboard">
+        <h2>📋 Scoreboard</h2>
+        <table class="score-table" id="score-table">
+            <thead>
+            <tr><th>Category</th><th>Points</th></tr>
+            </thead>
+            <tbody id="score-body"></tbody>
+            <tfoot>
+            <tr class="total-row"><td><strong>Total</strong></td><td id="total">0</td></tr>
+            </tfoot>
+        </table>
+    </section>
+</main>
+
+<section class="rules">
+    <h2>📘 Rules of the Game</h2>
+    <ul>
+        <li>Each player rolls five dice up to three times per turn.</li>
+        <li>Click a die to hold it between rolls.</li>
+        <li>After finishing rolls, choose a category to score it.</li>
+        <li>Each category can be used only once.</li>
+        <li>Full House = 25 pts, Small Straight = 30, Large Straight = 40, Yatzy = 50.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Created by Mahmoud • CST3106 Assignment 1</p>
+</footer>
+</body>
+</html>
