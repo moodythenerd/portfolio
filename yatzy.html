@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatzy Game — Project Details</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="card">
+    <h1><i class="fa-solid fa-dice"></i> Yatzy Game</h1>
+    <p>A full-stack dice game built with JavaScript and Node.js (Lab 05–07 project).</p>
+</header>
+
+<section class="card">
+    <h2>🎮 Overview</h2>
+    <p>
+        The Yatzy Game is a browser-based dice game inspired by the classic Yatzy rules.
+        It was developed as part of CST3106 labs to demonstrate DOM manipulation, object-oriented programming,
+        and client-server integration using Node and Express.
+    </p>
+</section>
+
+<section class="card">
+    <h2>🧠 Technical Summary</h2>
+    <ul>
+        <li>Frontend: HTML, CSS, and Vanilla JavaScript for interactive dice and scoreboard.</li>
+        <li>Backend: Node.js with Express to handle static file serving and roll simulation endpoints.</li>
+        <li>Features: Roll limit logic, hold toggling, score categories, and responsive design.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>📘 README (Summary)</h2>
+    <p>
+        This game implements Yatzy mechanics including rolling, holding, scoring, and turn control.
+        The architecture uses modular JavaScript — with a <code>Dice</code> class and <code>YatzyGame</code> engine.
+        Each class manages a part of the gameplay, ensuring separation of logic and UI updates.
+    </p>
+    <p>
+        The game was built in stages:
+    </p>
+    <ol>
+        <li><strong>Lab 05:</strong> Designed basic layout and UI mock-up.</li>
+        <li><strong>Lab 06:</strong> Implemented interactive dice and hold functionality.</li>
+        <li><strong>Lab 07:</strong> Integrated Node.js + Express backend with game logic refinements.</li>
+    </ol>
+</section>
+
+<section class="card">
+    <a class="btn" href="portfolio.html"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+
+</section>
+
+<footer>
+    <p>© <span id="year"></span> Moody Tawfiq • Yatzy Project Details</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
