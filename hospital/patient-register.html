@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Emergency Check-In</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/register.js"></script>
+</head>
+
+<body class="page">
+
+<div class="card">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/1483/1483336.png"
+         width="70" style="display:block;margin:0 auto;" />
+
+    <h2 style="text-align:center;margin-top:1rem;">Emergency Check-In</h2>
+    <p style="text-align:center;margin-bottom:1rem;">
+        Tell us your symptoms and get your estimated ER wait time.
+    </p>
+
+    <form id="reg-form" class="form">
+
+        <label>
+            Full Name
+            <input type="text" id="name" required />
+        </label>
+
+        <label>
+            Age
+            <input type="number" id="age" required />
+        </label>
+
+        <label>
+            Symptoms
+            <input type="text" id="symptoms" required />
+        </label>
+
+        <label>
+            Pain Level (1 = mild, 5 = extreme)
+            <select id="pain" required>
+                <option value="">Select pain level</option>
+                <option value="1">1 - Mild</option>
+                <option value="2">2 - Moderate</option>
+                <option value="3">3 - Serious</option>
+                <option value="4">4 - Severe</option>
+                <option value="5">5 - Extreme</option>
+            </select>
+        </label>
+
+        <button type="submit" class="btn">Complete Check-In</button>
+    </form>
+
+    <a class="link" href="index.html">Back to Home</a>
+
+</div>
+
+</body>
+</html>
