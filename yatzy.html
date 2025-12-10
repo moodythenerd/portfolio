@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatzy Game — Project Details</title>
+
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ONLY ===== -->
+<nav class="site-nav">
+    <ul>
+        <li><a href="portfolio.html#about">About</a></li>
+        <li><a href="portfolio.html#projects">Projects</a></li>
+        <li><a href="portfolio.html#skills">Skills</a></li>
+        <li><a href="portfolio.html#education">Education</a></li>
+        <li><a href="portfolio.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="card">
+    <h1><i class="fa-solid fa-dice"></i> Yatzy Game</h1>
+    <p>A full-stack dice game built with JavaScript and Node.js (Lab 05–07 Project).</p>
+</header>
+
+<section class="card">
+    <h2>🎮 Overview</h2>
+    <p>The Yatzy Game is a browser-based dice experience built to demonstrate DOM manipulation, OOP, and backend interaction.</p>
+</section>
+
+<section class="card">
+    <h2>🧠 Technical Summary</h2>
+    <ul>
+        <li>HTML, CSS, and Vanilla JavaScript for UI and scoring.</li>
+        <li>Node.js + Express backend for roll simulation endpoints.</li>
+        <li>Modular classes: <code>Dice</code> + <code>YatzyGame</code>.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>📘 Development Stages</h2>
+    <ol>
+        <li><strong>Lab 05:</strong> UI layout and initial design.</li>
+        <li><strong>Lab 06:</strong> Dice logic + hold functionality.</li>
+        <li><strong>Lab 07:</strong> Backend connection with Express.</li>
+    </ol>
+</section>
+
+<section class="card">
+    <a class="btn" href="portfolio.html">
+        <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+</section>
+
+<footer>
+    <p>© <span id="year"></span> Moody Tawfiq • Yatzy Project Details</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

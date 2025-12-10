@@ -184,3 +184,10 @@ footer a {
         grid-template-columns: 1fr;
     }
 }
+/* Smooth transition between pages */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    transition: opacity 0.4s ease;
+}

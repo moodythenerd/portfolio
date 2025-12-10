@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Triage System — Project Details</title>
+
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ONLY ===== -->
+<nav class="site-nav">
+    <ul>
+        <li><a href="portfolio.html#about">About</a></li>
+        <li><a href="portfolio.html#projects">Projects</a></li>
+        <li><a href="portfolio.html#skills">Skills</a></li>
+        <li><a href="portfolio.html#education">Education</a></li>
+        <li><a href="portfolio.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="card">
+    <h1><i class="fa-solid fa-truck-medical"></i> Hospital Triage System</h1>
+    <p>A complete front-end simulation of an ER check-in and queue workflow.</p>
+</header>
+
+<section class="card">
+    <h2>🩺 Overview</h2>
+    <p>This interface covers patient check-in, symptom input, wait-time viewing, and admin queue management.</p>
+</section>
+
+<section class="card">
+    <h2>🧠 Technical Summary</h2>
+    <ul>
+        <li>HTML & CSS for structure and responsive design.</li>
+        <li>JavaScript for UI flow, input handling, and dynamic content.</li>
+        <li>Pages include: Register, Login, Patient View, Admin Login, Admin Dashboard.</li>
+        <li>Backend (Node.js + Express + PostgreSQL) planned for full triage logic.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>📘 Future Backend Plan</h2>
+    <ul>
+        <li>Severity scoring + triage priority queue.</li>
+        <li>Real-time API-based wait times.</li>
+        <li>Admin interface for treating patients.</li>
+        <li>Persistent data storage in PostgreSQL.</li>
+        <li>Authentication for admin + patients.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <a class="btn" href="portfolio.html">
+        <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+</section>
+
+<footer>
+    <p>© <span id="year"></span> Moody Tawfiq • Hospital Project Details</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
